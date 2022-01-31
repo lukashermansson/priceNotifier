@@ -13,11 +13,11 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
-    implementation("org.jsoup:jsoup:1.10.3")
+    implementation("io.github.microutils:kotlin-logging-jvm:2.1.21")
+    implementation("org.jsoup:jsoup:1.14.3")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
