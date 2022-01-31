@@ -10,14 +10,14 @@ import javax.annotation.PostConstruct
 class SystemTraySubscriber(val subscriber: Scheduler) {
 
     @PostConstruct
-    fun e() {
+    private fun setupSubscription() {
         subscriber.subscribers += {
             displayTray(it)
         }
     }
 
 
-    fun displayTray(price: Price) {
+    private fun displayTray(price: Price) {
 
         val tray = SystemTray.getSystemTray()
 
